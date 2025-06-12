@@ -294,12 +294,7 @@ section {
     box-shadow: none;
 }
 .estrellas-header {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 30px;
-    pointer-events: none;
-    z-index: 2;
+    display: none !important;
 }
 .estrella {
     font-size: 2.2rem;
