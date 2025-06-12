@@ -207,6 +207,18 @@ section {
     header {
         padding: 60px 0;
     }
+    .estrellas-header {
+        top: 10px;
+    }
+    .estrella {
+        font-size: 1.2rem;
+    }
+    .estrella-1 { left: 10%; top: 0; font-size: 1.4rem; }
+    .estrella-2 { left: 80%; top: 8px; font-size: 1.1rem; }
+    .estrella-3 { left: 45%; top: 18px; font-size: 1rem; }
+    .estrella-4 { left: 60%; top: 4px; font-size: 1.2rem; }
+    /* Opcional: ocultar una estrella si aún se superponen */
+    /* .estrella-3 { display: none; } */
     
     .card {
         margin-bottom: 20px;
@@ -230,32 +242,32 @@ section {
     }
     
     .foto-arco {
-        max-width: 280px;
+        max-width: 220px;
         padding: 1rem 1rem 1.5rem 1rem;
-        border-radius: 0 0 40px 40px/0 0 60px 60px;
     }
     .foto-arco img {
-        border-radius: 0 0 40px 40px/0 0 60px 60px;
-        object-fit: cover;
+        border-radius: 0 0 80px 80px/0 0 120px 120px;
         width: 100%;
-        height: auto;
+        height: 180px;
+        object-fit: cover;
         background: #ede7f6;
     }
     .arco-img {
-        border-radius: 0 0 60px 60px/0 0 90px 90px;
-        width: 100%;
-        height: auto;
+        height: 160px;
     }
     .arco-img img {
-        border-radius: 0 0 60px 60px/0 0 90px 90px;
-        object-fit: cover;
         width: 100%;
-        height: auto;
-        background: #ede7f6;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 90%;
+        border-radius: 0 0 120px 120px/0 0 180px 180px;
     }
     .tarjeta-arco {
-        max-width: 100%;
-        padding: 0 15px 2rem 15px;
+        max-width: 95vw;
+    }
+    .decoracion-servicios {
+        font-size: 1.2rem;
+        letter-spacing: 0.5rem;
     }
 }
 
