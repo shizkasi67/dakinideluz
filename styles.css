@@ -228,6 +228,32 @@ section {
     #horarios .table {
         font-size: 0.9rem;
     }
+    
+    .foto-arco {
+        max-width: 280px;
+        padding: 1rem 1rem 1.5rem 1rem;
+        border-radius: 0 0 40px 40px/0 0 60px 60px;
+    }
+    .foto-arco img {
+        border-radius: 0 0 40px 40px/0 0 60px 60px;
+        object-fit: contain;
+        height: 180px;
+        background: #ede7f6;
+    }
+    .arco-img {
+        height: 220px;
+        border-radius: 0 0 60px 60px/0 0 90px 90px;
+    }
+    .arco-img img {
+        border-radius: 0 0 60px 60px/0 0 90px 90px;
+        object-fit: contain;
+        height: 100%;
+        background: #ede7f6;
+    }
+    .tarjeta-arco {
+        max-width: 100%;
+        padding: 0 15px 2rem 15px;
+    }
 }
 
 /* Animaciones */
@@ -300,20 +326,6 @@ section {
     object-fit: cover;
     object-position: center 90%;
     border-radius: 0 0 120px 120px/0 0 180px 180px;
-}
-
-@media (max-width: 768px) {
-    .foto-arco {
-        max-width: 280px;
-        padding: 1rem 1rem 1.5rem 1rem;
-    }
-    .arco-img {
-        height: 200px;
-    }
-    .tarjeta-arco {
-        max-width: 100%;
-        padding: 0 15px 2rem 15px;
-    }
 }
 
 /* Header oscuro con estrellas */
