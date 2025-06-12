@@ -264,17 +264,55 @@ section {
     display: inline-block;
     position: relative;
     max-width: 320px;
+    width: 100%;
 }
 .foto-arco img {
     border-radius: 0 0 80px 80px/0 0 120px 120px;
     width: 100%;
+    height: auto;
     display: block;
+    object-fit: cover;
+}
+
+/* Tarjeta en arco */
+.tarjeta-arco {
+    background: transparent;
+    border: none;
+    padding: 0 0 2rem 0;
+    max-width: 340px;
+    margin: 0 auto;
+    width: 100%;
+}
+.arco-img {
+    background: #ede7f6;
+    border-radius: 0 0 120px 120px/0 0 180px 180px;
+    overflow: hidden;
+    height: 260px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-shadow: 0 4px 24px 0 rgba(107, 79, 187, 0.10);
+    width: 100%;
+}
+.arco-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 90%;
+    border-radius: 0 0 120px 120px/0 0 180px 180px;
 }
 
 @media (max-width: 768px) {
     .foto-arco {
-        max-width: 220px;
+        max-width: 280px;
         padding: 1rem 1rem 1.5rem 1rem;
+    }
+    .arco-img {
+        height: 200px;
+    }
+    .tarjeta-arco {
+        max-width: 100%;
+        padding: 0 15px 2rem 15px;
     }
 }
 
@@ -352,31 +390,6 @@ section {
     background: linear-gradient(135deg, #6b4fbb 80%, #4b2e83 100%);
 }
 
-/* Tarjeta en arco */
-.tarjeta-arco {
-    background: transparent;
-    border: none;
-    padding: 0 0 2rem 0;
-    max-width: 340px;
-    margin: 0 auto;
-}
-.arco-img {
-    background: #ede7f6;
-    border-radius: 0 0 120px 120px/0 0 180px 180px;
-    overflow: hidden;
-    height: 260px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    box-shadow: 0 4px 24px 0 rgba(107, 79, 187, 0.10);
-}
-.arco-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 90%;
-    border-radius: 0 0 120px 120px/0 0 180px 180px;
-}
 .titulo-servicio {
     color: #fff;
     font-family: 'Playfair Display', serif;
@@ -415,19 +428,6 @@ section {
 /* Alternar colores de fondo para secciones */
 .fondo-claro {
     background: #ede7f6;
-}
-
-@media (max-width: 768px) {
-    .arco-img {
-        height: 160px;
-    }
-    .tarjeta-arco {
-        max-width: 95vw;
-    }
-    .decoracion-servicios {
-        font-size: 1.2rem;
-        letter-spacing: 0.5rem;
-    }
 }
 
 .beneficios-servicio {
