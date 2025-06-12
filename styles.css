@@ -237,18 +237,20 @@ section {
     .foto-arco img {
         border-radius: 0 0 40px 40px/0 0 60px 60px;
         object-fit: cover;
-        height: 180px;
+        width: 100%;
+        height: auto;
         background: #ede7f6;
     }
     .arco-img {
-        height: 180px;
         border-radius: 0 0 60px 60px/0 0 90px 90px;
+        width: 100%;
+        height: auto;
     }
     .arco-img img {
         border-radius: 0 0 60px 60px/0 0 90px 90px;
         object-fit: cover;
-        height: 100%;
         width: 100%;
+        height: auto;
         background: #ede7f6;
     }
     .tarjeta-arco {
